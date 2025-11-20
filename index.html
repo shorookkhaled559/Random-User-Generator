@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-yH0cQnq+Uncn2I1OTzOosdPX/odXjR0Q3oPTMJ8hX9CqZ7C0hwx1FvlZP6t+kB9pQfZ5MhxUpBzE8b8Z1iKQKg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white shadow-md rounded-lg p-6">
+      <h1 class="text-2xl font-bold mb-4 text-center">
+        Random User JSON Generator
+      </h1>
+
+      <div class="flex flex-col sm:flex-row gap-3 mb-4">
+        <input
+          id="countInput"
+          type="number"
+          placeholder="Enter number of users"
+          class="border p-2 rounded w-full"
+        />
+        <button
+          id="generateBtn"
+          class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
+          Generate
+        </button>
+        <button
+          id="copyAllBtn"
+          class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+        >
+          <i class="fa-solid fa-copy"></i> Copy All
+        </button>
+      </div>
+
+      <div id="results" class="space-y-4"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
